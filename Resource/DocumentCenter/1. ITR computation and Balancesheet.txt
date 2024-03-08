@@ -1,0 +1,18 @@
+1. ITR computation and Balancesheet
+2. Check GST Registration : DSP1015 details not showing
+3. view_all_pancard.aspx : export to excel - Done
+4. E-Mail Send Master
+5. Company Master with GST details and Logo - Done
+6. Website 
+
+
+
+=========================
+
+14-12-2023
+1. Branch opening on Zone level, State Level
+2. Downline with orders and wallet amount 
+3. ITR wallet : Main balance - Done
+4. Invoice - Done
+5. Online Agreement - Pending for discussion
+
