@@ -44,7 +44,7 @@ namespace Assignment.Repository
                 OfficeId = create_DocumentCenter.OfficeId,
                 Folder = create_DocumentCenter.Folder,
                 ModifiedBy = create_DocumentCenter.ModifiedBy,
-                ModifiedDate = DateTime.UtcNow,
+                ModifiedDate = DateTime.UtcNow.AddHours(5.45),
                 Type = fileType,
                 UploadedFileName = filename
             };
@@ -86,7 +86,7 @@ namespace Assignment.Repository
                                   Type = dc.Type,
                                   Folder = dc.Folder,
                                   ModifiedBy = dc.ModifiedBy,
-                                  ModifiedDate = dc.ModifiedDate,
+                                  ModifiedDate = Convert.ToDateTime(dc.ModifiedDate).ToString("dd-MMM-yyyy hh:mm:ss tt"),
                                   DepartmentName = depart.DepartmentName,
                                   DivisionName = division.DivisionName,
                                   OfficeName = office.OfficeName,
@@ -135,7 +135,7 @@ namespace Assignment.Repository
             documentCenter.FileName = update_DocumentCenter.FileName;
             documentCenter.Folder = update_DocumentCenter.Folder;
             documentCenter.ModifiedBy = update_DocumentCenter.ModifiedBy;
-            documentCenter.ModifiedDate = DateTime.UtcNow;
+            documentCenter.ModifiedDate = DateTime.UtcNow.AddHours(5.50);
             await _appDBContext.SaveChangesAsync();
             return documentCenter;
         }
